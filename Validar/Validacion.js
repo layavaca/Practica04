@@ -242,11 +242,11 @@ function validarCorreo() {
 function validarFecha() {
     var fecha = formulario01.fechaNacimiento.value;
     var arreglo = fecha.split('/');
-    var aux1 = arreglo[0];
-    var aux2 = arreglo[1];
-    var aux3 = arreglo[2];
+    var aux1 = arreglo[0];dia
+    var aux2 = arreglo[1];mes
+    var aux3 = arreglo[2];año
     if (fecha.length == 10) {
-        if (aux1 < 1 || aux1 > 31) {
+        if  (aux3 < 1920 || aux3 > 2019){
             document.getElementById('mensajeFechaNacimiento').innerHTML = "Ingrese un día menor que 32 y mayor a que 00";
             document.getElementById('fechaNacimiento').style.border = "1px solid red";
             return false;
@@ -254,7 +254,7 @@ function validarFecha() {
             document.getElementById('mensajeFechaNacimiento').innerHTML = "Ingrese un mes menor que 12 y mayor a que 00";
             document.getElementById('fechaNacimiento').style.border = "1px solid red";
             return false;
-        } else if (aux3 < 1920 || aux3 > 2019) {
+        } else if (aux1 < 1 || aux1 > 31) {
             document.getElementById('mensajeFechaNacimiento').innerHTML = "Ingrese un año menor que 2019 y mayor a que 1920";
             document.getElementById('fechaNacimiento').style.border = "1px solid red";
             return false;
@@ -270,7 +270,7 @@ function validarFecha() {
     }
 }
 
-function validarContrasena() {
+/*function validarContrasena() {
     var contrasenna = formulario01.contrasena.value;
     if (contrasenna.length >= 8) {
         var mayuscula = false;
@@ -301,4 +301,4 @@ function validarContrasena() {
         document.getElementById('mensajecontrasena').innerHTML = 'Contraseña incorrecta 8 caracteres mínimos ';
         return false;
     }
-}
+}*/

@@ -2,14 +2,14 @@
 
     $servidor = "localhost";
     $usuario = "root";
-    $password = "root";
-    $base = "hipermedial";
+    $password = "";
+    $base = "hypermedial";
 
-    $conexion = new mysqli($servidor, $usuario, $password, $base);
-    $conexion->set_charset('utf8');
+    $conn = new mysqli($servidor, $usuario, $password, $base);
+    $conn->set_charset('utf8');
 
-    if($conexion->connect_error){
-        die("Conexion Fallida".$conexion->connect_error);
+    if($conn->connect_error){
+        die("Conexion Fallida".$conn->connect_error);
     }
 
 ?>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html lang="es" >
     <head>
         <meta charset="UTF-8">
         <title>Crear Usuario</title>
@@ -7,7 +7,7 @@
         <script type="text/javascript" src="Validar/Validacion.js"></script>
     </head>
 <body>
-    <form id="formulario01" method="POST" action="Controlador/controlador.php" class="cuadro"
+    <form id="formulario01" method="POST" action="Control/crear_usuario.php" 
         onsubmit="return validarCamposObligatorios()">
         <label for="cedula">Cédula (*)</label>
         <input type="text" id="cedula" name="cedula" value="" placeholder="Ingrese el numero de cédula"
@@ -52,14 +52,22 @@
         <span id="mensajecorreo"></span>
         <br>
 
-        <label for="contrasena">Contraseña (*)</label>
-        <input type="password" name="contrasena" id="contrasena" value="" placeholder="Ingrese su contraseña"
-            onkeypress="return validarLetrasContrasena(event)" onchange="validarContrasena()">
-        <span id="mensajecontrasena"></span>
-        <br>
+        <label>Contrasena:</label>
+        <input name="password" id="password" type="password" value=""></label>
+        <BR>
 
-        <input class="botonstyle" type="submit" value="aceptar" name="aceptar" value="Aceptar">
-        <input class="botonstyle" type="reset" value="cancelar" name="cancelar" value="Cancelar">
+        <label for="rol">Rol(*)</label>
+
+        <input type="radio" id="admin"name ="admin" value="A"/>
+        <label for="Admin">Admin</label>
+
+        <input type="radio" id="user" name="user" value="U"/>
+        <label for="User">User</label>
+        <br>
+        
+        <button type="submit" id="btnGuardar"> GUARDAR </button>
+        <br>
+        <p>Ya tienes una cuenta? <a href="Control/login.php">Inicia Sesión</a> </p>
 
     </form>
 </body>

@@ -1,5 +1,5 @@
 html {
-    background: #FEBA4B;
+    background:blue;
 }
 .caja {
     width: 1500;
@@ -9,8 +9,6 @@ html {
     background: rgb(144, 128, 77);
     bottom: 400;
 }
-
-
 
 .botonstyle {
     width: 150px;
