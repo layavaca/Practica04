@@ -1,7 +1,9 @@
 # Practica04
- Con base al archivo PHP (Apuntes y ejercicios), se pide realizar los siguientes ajustes: 
+Relizar
  
-a) Agregar roles a la tabla usuario. Un usuario puede tener un rol de “admin” o “user” b) Los usuarios con rol de “admin” pueden: modificar, eliminar y cambiar la contraseña de cualquier usuario de la base de datos. c) Los usuarios con rol de “user” pueden modificar, eliminar y cambiar la contraseña de su usuario. 
+a) Agregar roles a la tabla usuario. Un usuario puede tener un rol de “admin” o “user” 
+b) Los usuarios con rol de “admin” pueden: modificar, eliminar y cambiar la contraseña de cualquier usuario de la base de datos. 
+c) Los usuarios con rol de “user” pueden modificar, eliminar y cambiar la contraseña de su usuario. 
  
 Luego, con base a estos ajustes realizados, se pide desarrollar una aplicación web usando PHP y Base de Datos que permita gestionar reuniones entre usuarios de la aplicación. De las reuniones se desea conocer la fecha y hora, lugar, coordenadas (latitud y longitud) remitente (quien invita), invitados (quienes asisten), motivo de la reunión y observaciones.  
  
