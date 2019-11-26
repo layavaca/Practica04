@@ -28,7 +28,7 @@
     }
     
     $sql = "INSERT INTO usuarios VALUES (0, '$cedula', '$nombres', '$apellidos', '$direccion', '$telefono',
-     '$correo', MD5('$passwork'), '$fecha','N',null,null)";
+     '$correo', MD5('$passwork'), '$fecha', 'N', null, null)";
      if($conn->query($sql) === TRUE){
          echo "<p>Se ha registrado correctamente !!</p>";
 }else{
